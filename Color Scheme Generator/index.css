@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    color: #D5D4D8;
+    margin: 0 auto;
+   
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #15191d;   
+    overflow-y: hidden; 
+}
+
+input{
+    border-radius: 3px;
+}
+
+select {
+    font-weight: 400;
+    background-color: #1F293A;
+    width: 45%;
+    padding-left: 6.5px;
+}
+
+button{
+    background-color: #3D4B60;
+    font-size: 14px;
+}
+
+input, button {
+    width: 20%;  
+}
+
+select, button{
+    border-radius: 6px;
+}
+
+input, select, button {
+    height: 6vh;
+    border: 1px solid #D1D5DB;
+    cursor: pointer;
+}
+
+.header > form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1.3px solid #262626;
+    width: 98vw;
+    max-width: 1024px;
+    height: 12vh;
+}
+
+.color {
+    width: 16.6%; /* n total colors as --columns */
+}
+
+.color-palette {
+    height: 80vh;
+    display: flex;
+    background-color: #212529;
+    border: 1px #262626 solid;
+}
+
+.color-names {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border: 1px #262626 solid;
+} 
+
+.color-names p:hover {
+    color: grey;
+}
+
+p {
+    cursor: copy;
+    font-size: 1em;
+    padding: .2em;
+}
+
+@media (max-width: 900px) {
+    button {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 590px) {
+    button, select {
+        font-size: 0.7em;
+    }
+    
+    p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 350px) {
+    button, select {
+        font-size: 0.6em;
+    }
+    
+    p {
+        font-size: 0.6em;
+    }
+}

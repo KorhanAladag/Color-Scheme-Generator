@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+        <title>🎨 Color Palette Generator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <form> 
+                    <input type="color"  class="color-picker" id="color-picker">
+                    <select name="color-type" id="color-type" class="color-type"> 
+                        <option value="monochrome">Monochrome</option> 
+                        <option value="monochrome-dark">Monochrome-dark</option> 
+                        <option value="monochrome-light">Monochrome-light</option> 
+                        <option value="analogic">Analogic</option> 
+                        <option value="compelement">Complement</option> 
+                        <option value="analogic-complement">Analogic-complement</option> 
+                        <option value="triad">Triad</option> 
+                    </select>
+                    <button type="submit" id="color-button">Get color scheme</button>
+                </form>
+            </header>
+            <main>
+                <div id="color-palette" class="color-palette container">
+                    <!-- color palettes will be placed here -->
+                </div>
+                
+                <div id="color-names" class="color-names container">
+                    <!-- color names will be placed here <p> -->
+                </div>
+            </main>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
